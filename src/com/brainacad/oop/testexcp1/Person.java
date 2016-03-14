@@ -26,7 +26,7 @@ public class Person {
         return age;
     }
 
-    public void setAge(int age) throws InvalidAgeException {
+    public void setAge(int age) throws InvalidAgeException { //don't need to say throws for unchecked exception
         this.age = age;
         if(age == 0){
             throw new InvalidAgeException("Invalid age");
